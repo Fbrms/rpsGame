@@ -13,3 +13,18 @@ const randomSelection = () =>{
     return sel;
 }
 
+const playRound = () =>{
+    let resultado;
+    let sel = randomSelection();
+    let val1 = prompt("Choose: rock, paper, scissors");
+    while (val1!="rock" && val1!="paper" && val1!="scissors"){
+        console.log("hubo un error de tipeo, ingrese denuevo su eleccion")
+        val1 = prompt("Choose: rock, paper, scissors");
+    }
+    
+
+    console.log(sel, val1);
+}
+
+
+playRound();
