@@ -42,13 +42,15 @@ const game = () => {
         console.log(`ronda numero ${i+1}`)
         playRound();
     }
-    let continuar = prompt("quieres seguir jugando? (s-n)");
-    return continuar;
     
 }
-let continuar = game();
-if(continuar == s){
+
+
+
+game();
+let continuar = prompt("quieres seguir jugando? (s-n)")
+while(continuar == "s"){
     console.clear();
     game();
+    continuar = prompt("quieres seguir jugando? (s-n)");
 }
-
