@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="main.js"></script>
+    <script src="" defer></script>
+    <script src="main-rps-ui.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="main-container">
+        <div class="container">
+            <input type="button" class="btn rock" value="Rock">
+            <input type="button" class="btn paper" value="Paper">
+            <input type="button" class="btn scissors" value="Scissors">
+            <input type="button" class="reiniciar" value="Reiniciar">
+        </div>
+        <div class="container">
+            <h2>Ronda N° <span id="nRondas"> 1 </span> </h2>
+            <div class="recuadroBlanco">
+                <span id="selected"> </span>
+            </div>
+            
+        </div>
+        <div class="container">
+            <h2>SCORE</h1>
+                <div class="recuadroBlanco">
+                    <span id="score"></span>
+                </div>
+        </div>
+    </div>
 </body>
 </html>
